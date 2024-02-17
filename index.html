@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header container-fluid img-fluid ">
+
+        <div id="sidenavbar" class="sidenav">
+            <a href="#" class="closebtn" onclick="closenav()">&times;</a>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+            <a href="#">LOGIN</a>
+        </div>
+        <span class="open" onclick="opennav()">&#9776; Menu</span>
+            
+  
+        <div class="container ">
+            <div class="row position-relative">
+                <div class="Jumbotron col-md-6 ">
+                    <h1 class="content-title display-3">Makos <span class="text-info">Infotech</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero debitis cumque praesentium error laboriosam, eum in ipsum optio animi! Laboriosam praesentium dolores nemo ab impedit qui distinctio eius aperiam quo.</p>
+                    <button class="btn btn btn-primary btn-lg">Sign Up...</button>
+                    <button class="btn btn1 btn btn-primary btn-lg ">Login Up...</button>
+
+                </div>
+                <div class="Jumbotron main-img col-md-6  ">
+                    <img src="main-img.jpg" alt="" class="img-fluid " width="700vh" >
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        function opennav() {
+          document.getElementById("sidenavbar").style.width = "250px";
+        }
+        function closenav() {
+          document.getElementById("sidenavbar").style.width = "0";
+        }
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
